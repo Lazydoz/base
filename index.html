@@ -1,49 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lazydo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazydo</title>
 
-    <link rel="stylesheet" href="/base/style.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<style>
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-
-        background-color: #fbeede;
-    }
-
-    .btn{
-        width: 100px;
-        height: 25px;
-
-        font-weight: 500;
-        border-radius: 10px;
-    }
-</style>
 <body>
-    <div>
-        <div class="p" style="display: flex; /*border-bottom: 1px solid; padding: 25vh 0;*/">
-            <img src="/base/image/webicon.png" alt="" class="p-1" style="width: 15rem; height: 15rem; object-fit: cover;">
-            <div class="p-2" style="margin: 10px; width: 70vw;">
-                <div class="p-2-1" style="height: 50%;">
-                    <h1>DONT DO MUCH, DO SMART, DO EFFECTIVELY</h1>
-                    <p>
-                    Thời gian là 1 thứ quý báu và bạn có rất nhiều việc để mà quan tâm, 
-                    đừng quá lãng phí thời gian để làm 1 thứ gì đó hãy làm nó 1 cách thông minh và hiệu quả
-                    [ MÈO LƯỜI ]
-                    </p>
-                </div>
-                <div class="p-2-2" style="height: 50%;">
-                    <button type="button" class="btn" onclick="window.location.href='https://lazydoz.github.io/khothoc01/';">kho thóc 1</button>
-                    <button type="button" class="btn" onclick="window.location.href='https://lazydoz.github.io/khothoc02/';">kho thóc 2</button>
-                </div>
-            </div>
+
+  <!-- Phần Hero (Nền Kem) -->
+  <section class="hero-section">
+    <div class="hero-container">
+      
+      <div class="hero-image">
+        <img
+          src="./image/webicon.png"
+          alt="Lazy Cat"
+          class="logo-image"
+        >
+      </div>
+
+      <div class="hero-content">
+        <span class="badge text-black">MÈOZ LƯỜIZ</span>
+
+        <h1>
+          DON'T DO MUCH,<br>
+          DO SMART,<br>
+          DO EFFECTIVELY.
+        </h1>
+
+        <p>
+          Thời gian là một thứ vô cùng quý giá. Bạn còn rất nhiều việc phải quan tâm,
+          vì vậy đừng lãng phí nó vào những điều không cần thiết.
+          Hãy làm việc thông minh hơn, tối ưu hơn và hiệu quả hơn.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#about" class="btn-primary">
+            Bắt đầu ngay
+          </a>
+
+          <a href="#about" class="btn-secondary">
+            Tìm hiểu thêm
+          </a>
         </div>
+      </div>
+
     </div>
+  </section>
+
+  <!-- Phần Nội dung (Nền Trắng che đè lên Hero khi lướt xuống) -->
+  <section class="content-section" id="about">
+    <div class="content-container">
+      <h2>Về Chúng Tôi & Tầm Nhìn</h2>
+      <p>
+        Đây là phần nội dung nền trắng sẽ tự động trượt lên và che hoàn toàn phần Hero phía trên khi bạn cuộn trang xuống.
+      </p>
+      <p>
+        Bạn có thể thêm các tính năng, thông tin sản phẩm, bài viết hoặc bất kỳ thành phần nào khác vào đây.
+      </p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
